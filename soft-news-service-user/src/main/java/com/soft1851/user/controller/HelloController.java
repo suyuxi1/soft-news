@@ -1,6 +1,6 @@
 package com.soft1851.user.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import com.soft181.api.controller.user.HelloControllerApi;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @Version 1.0
  **/
 @RestController
-public class HelloController {
-    @GetMapping("/hello")
+public class HelloController implements HelloControllerApi {
+    @Override
     public Object hello(){
         return "hello";
     }
