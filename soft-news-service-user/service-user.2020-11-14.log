@@ -154,3 +154,39 @@
 2020-11-14 13:42:15.750 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8103"]
 2020-11-14 13:42:15.767 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8103 (http) with context path ''
 2020-11-14 13:42:15.773 [main] INFO  com.soft1851.user.Application - Started Application in 1.362 seconds (JVM running for 2.057)
+2020-11-14 13:52:21.830 [main] INFO  com.soft1851.user.Application - Starting Application on DESKTOP-IKB81RP with PID 4268 (D:\Downloads\idea code\soft-news\soft-news-service-user\target\classes started by SU in D:\Downloads\idea code\soft-news)
+2020-11-14 13:52:21.836 [main] INFO  com.soft1851.user.Application - The following profiles are active: prod
+2020-11-14 13:52:21.907 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-14 13:52:22.910 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-14 13:52:22.913 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-14 13:52:22.978 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-11-14 13:52:23.480 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8103 (http)
+2020-11-14 13:52:23.487 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8103"]
+2020-11-14 13:52:23.488 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-14 13:52:23.488 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-14 13:52:23.592 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-14 13:52:23.592 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1690 ms
+2020-11-14 13:52:23.837 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-14 13:52:24.569 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8103"]
+2020-11-14 13:52:24.588 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8103 (http) with context path ''
+2020-11-14 13:52:24.595 [main] INFO  com.soft1851.user.Application - Started Application in 3.272 seconds (JVM running for 4.216)
+2020-11-14 13:52:55.331 [main] INFO  com.soft1851.user.Application - Starting Application on DESKTOP-IKB81RP with PID 14596 (D:\Downloads\idea code\soft-news\soft-news-service-user\target\classes started by SU in D:\Downloads\idea code\soft-news)
+2020-11-14 13:52:55.334 [main] INFO  com.soft1851.user.Application - The following profiles are active: dev
+2020-11-14 13:52:55.405 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-14 13:52:55.824 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-14 13:52:55.826 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-14 13:52:55.849 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2020-11-14 13:52:56.217 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-14 13:52:56.225 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-14 13:52:56.225 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-14 13:52:56.225 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-14 13:52:56.328 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-14 13:52:56.328 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 927 ms
+2020-11-14 13:52:56.501 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-14 13:52:56.915 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-14 13:52:56.934 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-14 13:52:56.940 [main] INFO  com.soft1851.user.Application - Started Application in 2.068 seconds (JVM running for 2.83)
+2020-11-14 13:53:00.870 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-14 13:53:00.871 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-14 13:53:00.875 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2020-11-14 13:53:00.890 [http-nio-8003-exec-1] INFO  c.s.user.controller.HelloController - info:hello
