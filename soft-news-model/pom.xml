@@ -20,8 +20,27 @@
             <artifactId>soft-news-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!--mysql驱动-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!--mybatis-->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+        <!--通用mapper逆向工程工具-->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-spring-boot-starter</artifactId>
+        </dependency>
+        <!--pagehelper-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+        </dependency>
 
-<!--        &lt;!&ndash; mysql 驱动 &ndash;&gt;-->
 <!--        <dependency>-->
 <!--            <groupId>mysql</groupId>-->
 <!--            <artifactId>mysql-connector-java</artifactId>-->
@@ -42,7 +61,7 @@
 <!--            <artifactId>pagehelper-spring-boot-starter</artifactId>-->
 <!--        </dependency>-->
 
-<!--        &lt;!&ndash; mongodb &ndash;&gt;-->
+<!--&lt;!&ndash;         mongodb&ndash;&gt;-->
 <!--        <dependency>-->
 <!--            <groupId>org.mongodb</groupId>-->
 <!--            <artifactId>mongodb-driver</artifactId>-->
