@@ -1,5 +1,9 @@
+D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\config\InterceptorConfig.java
+D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\PassportInterceptor.java
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\user\HelloControllerApi.java
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\my\mapper\MyMapper.java
+D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\BaseController.java
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\user\UserControllerApi.java
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\config\Swagger2.java
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\user\PassportControllerApi.java
+D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\config\CorsConfig.java
