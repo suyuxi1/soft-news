@@ -1,5 +1,7 @@
 package com.soft1851.pojo;
 
+import lombok.Builder;
+
 import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -7,6 +9,7 @@ import java.util.Date;
 
 
 @Table(name = "app_user")
+@Builder
 public class AppUser {
     @Id
     private String id;
