@@ -45,4 +45,17 @@ public interface PassportControllerApi {
     @ApiOperation(value = "一键注册登录", notes = "一键注册登录接口", httpMethod = "POST")
     @PostMapping("/sign")
     GraceResult doSign(@RequestBody @Valid RegistLoginBO registLoginBO, BindingResult result, HttpServletRequest request, HttpServletResponse response);
+
+
+    /**
+     * 退出登录
+     *
+     * @param request  请求
+     * @param response 响应
+     * @param userId   userId
+     * @return GraceResult
+     */
+    @PostMapping("/logout")
+    @ApiOperation(value = "用户退出登录", notes = "用户退出登录", httpMethod = "POST")
+    GraceResult logout(HttpServletRequest request, HttpServletResponse response, @RequestParam String userId);
 }
