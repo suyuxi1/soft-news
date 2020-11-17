@@ -4,6 +4,7 @@ import com.soft1851.api.BaseController;
 import com.soft1851.api.controller.user.UserControllerApi;
 import com.soft1851.pojo.AppUser;
 import com.soft1851.pojo.bo.UpdateUserInfoBO;
+import com.soft1851.pojo.vo.AppUserVo;
 import com.soft1851.pojo.vo.UserAccountInfoVo;
 import com.soft1851.result.GraceResult;
 import com.soft1851.result.ResponseStatusEnum;
@@ -45,7 +46,7 @@ public class UserController extends BaseController implements UserControllerApi 
     @Override
     public GraceResult getUserInfo(String userId) {
         // 0.判断不能为空
-        if(StringUtils.isBlank(userId)){
+        if (StringUtils.isBlank(userId)) {
             return GraceResult.errorCustom(ResponseStatusEnum.UN_LOGIN);
         }
         // 1.根据userId查询用户，调用内部封装方法(复用、扩展方便)
@@ -60,7 +61,7 @@ public class UserController extends BaseController implements UserControllerApi 
     @Override
     public GraceResult updateUserInfo(@Valid UpdateUserInfoBO updateUserInfoBO, BindingResult result) {
         // 判断BindingResult是否存在错误的验证信息，如果有，则直接return
-        if (result.hasErrors()){
+        if (result.hasErrors()) {
             Map<String, String> errorMap = getErrors(result);
             return GraceResult.errorMap(errorMap);
         }
@@ -69,7 +70,21 @@ public class UserController extends BaseController implements UserControllerApi 
         return GraceResult.ok();
     }
 
-    private AppUser getUser(String userId){
+    @Override
+    public GraceResult getUserBasicInfo(String userId) {
+        //0.判断不能为空
+        if (StringUtils.isBlank(userId)) {
+            return GraceResult.errorCustom(ResponseStatusEnum.UN_LOGIN);
+        }
+        //1.查询userId
+        AppUser user = getUser(userId);
+        //2.信息脱敏，设置不显示
+        AppUserVo userVo = new AppUserVo();
+        BeanUtils.copyProperties(user, userVo);
+        return GraceResult.ok(userVo);
+    }
+
+    private AppUser getUser(String userId) {
         //todo 本方法后续扩展
         return userService.getUser(userId);
     }
