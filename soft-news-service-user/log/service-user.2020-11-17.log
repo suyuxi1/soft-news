@@ -1180,3 +1180,550 @@ Caused by: org.springframework.core.convert.ConverterNotFoundException: No conve
 2020-11-17 11:45:40.965 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
 2020-11-17 11:45:50.923 [http-nio-8003-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
 2020-11-17 11:45:51.271 [http-nio-8003-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-17 13:18:12.134 [DateSourceHikariCP housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - DateSourceHikariCP - Thread starvation or clock leap detected (housekeeper delta=1h29m20s720ms340µs700ns).
+2020-11-17 13:45:02.624 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-17 13:45:02.991 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-17 13:45:03.581 [main] INFO  com.soft1851.user.Application - The following profiles are active: dev
+2020-11-17 13:45:04.244 [main] WARN  t.m.s.a.MapperScannerRegistrar - 只有 Spring Boot 环境中可以通过 Environment(配置文件,环境变量,运行参数等方式) 配置通用 Mapper，其他环境请通过 @MapperScan 注解中的 mapperHelperRef 或 properties 参数进行配置!如果你使用 tk.mybatis.mapper.session.Configuration 配置的通用 Mapper，你可以忽略该错误!
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at tk.mybatis.spring.mapper.SpringBootBindUtil$SpringBoot2Bind.bind(SpringBootBindUtil.java:133)
+	at tk.mybatis.spring.mapper.SpringBootBindUtil.bind(SpringBootBindUtil.java:58)
+	at tk.mybatis.spring.mapper.ClassPathMapperScanner.setMapperProperties(ClassPathMapperScanner.java:278)
+	at tk.mybatis.spring.annotation.MapperScannerRegistrar.registerBeanDefinitions(MapperScannerRegistrar.java:103)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:384)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$$Lambda$159/25995971.accept(Unknown Source)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:383)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.soft1851.user.Application.main(Application.java:21)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at tk.mybatis.spring.mapper.SpringBootBindUtil$SpringBoot2Bind.bind(SpringBootBindUtil.java:125)
+	... 24 common frames omitted
+Caused by: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'mapper.mappers' to java.util.List<java.lang.Class<?>>
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:363)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:323)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$4(Binder.java:447)
+	at org.springframework.boot.context.properties.bind.Binder$$Lambda$48/7764562.bindProperty(Unknown Source)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:92)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:80)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:56)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$5(Binder.java:451)
+	at org.springframework.boot.context.properties.bind.Binder$$Lambda$49/9394519.get(Unknown Source)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:571)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withDataObject(Binder.java:557)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$300(Binder.java:512)
+	at org.springframework.boot.context.properties.bind.Binder.bindDataObject(Binder.java:449)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:390)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:319)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:308)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:238)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:199)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:186)
+	... 29 common frames omitted
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.List<java.lang.Class<?>>]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:321)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:194)
+	at org.springframework.boot.context.properties.bind.BindConverter$CompositeConversionService.convert(BindConverter.java:170)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:96)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.convert(IndexedElementsBinder.java:143)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindValue(IndexedElementsBinder.java:96)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindIndexed(IndexedElementsBinder.java:84)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindIndexed(IndexedElementsBinder.java:71)
+	at org.springframework.boot.context.properties.bind.CollectionBinder.bindAggregate(CollectionBinder.java:49)
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:56)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$3(Binder.java:414)
+	at org.springframework.boot.context.properties.bind.Binder$$Lambda$61/19111293.get(Unknown Source)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:571)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:512)
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:414)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:375)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:319)
+	... 46 common frames omitted
+2020-11-17 13:45:04.475 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-17 13:45:04.477 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-17 13:45:04.511 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2020-11-17 13:45:04.692 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.user]' package. Please check your configuration.
+2020-11-17 13:45:04.773 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3fc9877a-7a6c-3968-8d76-ab2c6ae8b505
+2020-11-17 13:45:05.171 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-17 13:45:05.182 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-17 13:45:05.183 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-17 13:45:05.183 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-17 13:45:05.354 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-17 13:45:05.355 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1755 ms
+2020-11-17 13:45:06.778 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-17 13:45:06.778 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-17 13:45:06.782 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-17 13:45:06.782 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-17 13:45:06.886 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 13:45:07.000 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-17 13:45:07.001 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-17 13:45:07.001 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-17 13:45:07.001 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-17 13:45:07.839 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-17 13:45:07.862 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-17 13:45:08.370 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-17 13:45:08.382 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-17 13:45:08.391 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-17 13:45:08.550 [main] INFO  com.soft1851.user.Application - Started Application in 6.894 seconds (JVM running for 7.909)
+2020-11-17 13:46:18.042 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-17 13:46:18.042 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-17 13:46:18.050 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-11-17 13:46:42.434 [http-nio-8003-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Source must not be null] with root cause
+java.lang.IllegalArgumentException: Source must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:201)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:693)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:639)
+	at com.soft1851.user.controller.UserController.getUserInfo(UserController.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2020-11-17 13:49:41.278 [http-nio-8003-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Source must not be null] with root cause
+java.lang.IllegalArgumentException: Source must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:201)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:693)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:639)
+	at com.soft1851.user.controller.UserController.getUserInfo(UserController.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2020-11-17 13:51:19.541 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-17 13:51:19.913 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-17 13:51:20.490 [main] INFO  com.soft1851.user.Application - The following profiles are active: dev
+2020-11-17 13:51:21.118 [main] WARN  t.m.s.a.MapperScannerRegistrar - 只有 Spring Boot 环境中可以通过 Environment(配置文件,环境变量,运行参数等方式) 配置通用 Mapper，其他环境请通过 @MapperScan 注解中的 mapperHelperRef 或 properties 参数进行配置!如果你使用 tk.mybatis.mapper.session.Configuration 配置的通用 Mapper，你可以忽略该错误!
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at tk.mybatis.spring.mapper.SpringBootBindUtil$SpringBoot2Bind.bind(SpringBootBindUtil.java:133)
+	at tk.mybatis.spring.mapper.SpringBootBindUtil.bind(SpringBootBindUtil.java:58)
+	at tk.mybatis.spring.mapper.ClassPathMapperScanner.setMapperProperties(ClassPathMapperScanner.java:278)
+	at tk.mybatis.spring.annotation.MapperScannerRegistrar.registerBeanDefinitions(MapperScannerRegistrar.java:103)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:384)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$$Lambda$159/25995971.accept(Unknown Source)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:383)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.soft1851.user.Application.main(Application.java:21)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at tk.mybatis.spring.mapper.SpringBootBindUtil$SpringBoot2Bind.bind(SpringBootBindUtil.java:125)
+	... 24 common frames omitted
+Caused by: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'mapper.mappers' to java.util.List<java.lang.Class<?>>
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:363)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:323)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$4(Binder.java:447)
+	at org.springframework.boot.context.properties.bind.Binder$$Lambda$48/7764562.bindProperty(Unknown Source)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:92)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:80)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:56)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$5(Binder.java:451)
+	at org.springframework.boot.context.properties.bind.Binder$$Lambda$49/9394519.get(Unknown Source)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:571)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withDataObject(Binder.java:557)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$300(Binder.java:512)
+	at org.springframework.boot.context.properties.bind.Binder.bindDataObject(Binder.java:449)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:390)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:319)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:308)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:238)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:199)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:186)
+	... 29 common frames omitted
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.List<java.lang.Class<?>>]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:321)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:194)
+	at org.springframework.boot.context.properties.bind.BindConverter$CompositeConversionService.convert(BindConverter.java:170)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:96)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.convert(IndexedElementsBinder.java:143)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindValue(IndexedElementsBinder.java:96)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindIndexed(IndexedElementsBinder.java:84)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindIndexed(IndexedElementsBinder.java:71)
+	at org.springframework.boot.context.properties.bind.CollectionBinder.bindAggregate(CollectionBinder.java:49)
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:56)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$3(Binder.java:414)
+	at org.springframework.boot.context.properties.bind.Binder$$Lambda$61/19111293.get(Unknown Source)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:571)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:512)
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:414)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:375)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:319)
+	... 46 common frames omitted
+2020-11-17 13:51:21.372 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-17 13:51:21.374 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-17 13:51:21.413 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2020-11-17 13:51:21.554 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.user]' package. Please check your configuration.
+2020-11-17 13:51:21.629 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3fc9877a-7a6c-3968-8d76-ab2c6ae8b505
+2020-11-17 13:51:21.945 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-17 13:51:21.954 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-17 13:51:21.954 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-17 13:51:21.954 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-17 13:51:22.092 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-17 13:51:22.092 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1587 ms
+2020-11-17 13:51:23.250 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-17 13:51:23.250 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-17 13:51:23.254 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-17 13:51:23.254 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-17 13:51:23.346 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 13:51:23.449 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-17 13:51:23.450 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-17 13:51:23.450 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-17 13:51:23.450 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-17 13:51:24.197 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-17 13:51:24.219 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-17 13:51:24.668 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-17 13:51:24.679 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-17 13:51:24.690 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-17 13:51:24.836 [main] INFO  com.soft1851.user.Application - Started Application in 6.201 seconds (JVM running for 7.196)
+2020-11-17 13:51:32.720 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-17 13:51:32.720 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-17 13:51:32.728 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-11-17 13:53:23.701 [http-nio-8003-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-17 13:53:24.048 [http-nio-8003-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-17 13:57:20.196 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-17 13:57:20.570 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-17 13:57:21.123 [main] INFO  com.soft1851.user.Application - The following profiles are active: dev
+2020-11-17 13:57:21.708 [main] WARN  t.m.s.a.MapperScannerRegistrar - 只有 Spring Boot 环境中可以通过 Environment(配置文件,环境变量,运行参数等方式) 配置通用 Mapper，其他环境请通过 @MapperScan 注解中的 mapperHelperRef 或 properties 参数进行配置!如果你使用 tk.mybatis.mapper.session.Configuration 配置的通用 Mapper，你可以忽略该错误!
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at tk.mybatis.spring.mapper.SpringBootBindUtil$SpringBoot2Bind.bind(SpringBootBindUtil.java:133)
+	at tk.mybatis.spring.mapper.SpringBootBindUtil.bind(SpringBootBindUtil.java:58)
+	at tk.mybatis.spring.mapper.ClassPathMapperScanner.setMapperProperties(ClassPathMapperScanner.java:278)
+	at tk.mybatis.spring.annotation.MapperScannerRegistrar.registerBeanDefinitions(MapperScannerRegistrar.java:103)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:384)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$$Lambda$159/25995971.accept(Unknown Source)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:383)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.soft1851.user.Application.main(Application.java:21)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at tk.mybatis.spring.mapper.SpringBootBindUtil$SpringBoot2Bind.bind(SpringBootBindUtil.java:125)
+	... 24 common frames omitted
+Caused by: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'mapper.mappers' to java.util.List<java.lang.Class<?>>
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:363)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:323)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$4(Binder.java:447)
+	at org.springframework.boot.context.properties.bind.Binder$$Lambda$48/7764562.bindProperty(Unknown Source)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:92)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:80)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:56)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$5(Binder.java:451)
+	at org.springframework.boot.context.properties.bind.Binder$$Lambda$49/9394519.get(Unknown Source)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:571)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withDataObject(Binder.java:557)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$300(Binder.java:512)
+	at org.springframework.boot.context.properties.bind.Binder.bindDataObject(Binder.java:449)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:390)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:319)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:308)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:238)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:199)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:186)
+	... 29 common frames omitted
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.List<java.lang.Class<?>>]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:321)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:194)
+	at org.springframework.boot.context.properties.bind.BindConverter$CompositeConversionService.convert(BindConverter.java:170)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:96)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.convert(IndexedElementsBinder.java:143)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindValue(IndexedElementsBinder.java:96)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindIndexed(IndexedElementsBinder.java:84)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindIndexed(IndexedElementsBinder.java:71)
+	at org.springframework.boot.context.properties.bind.CollectionBinder.bindAggregate(CollectionBinder.java:49)
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:56)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$3(Binder.java:414)
+	at org.springframework.boot.context.properties.bind.Binder$$Lambda$61/19111293.get(Unknown Source)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:571)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:512)
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:414)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:375)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:319)
+	... 46 common frames omitted
+2020-11-17 13:57:21.893 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-17 13:57:21.895 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-17 13:57:21.923 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2020-11-17 13:57:22.067 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.user]' package. Please check your configuration.
+2020-11-17 13:57:22.138 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3fc9877a-7a6c-3968-8d76-ab2c6ae8b505
+2020-11-17 13:57:22.443 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-17 13:57:22.453 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-17 13:57:22.454 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-17 13:57:22.454 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-17 13:57:22.600 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-17 13:57:22.600 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1462 ms
+2020-11-17 13:57:23.854 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-17 13:57:23.854 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-17 13:57:23.858 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-17 13:57:23.858 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-17 13:57:23.954 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 13:57:24.064 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-17 13:57:24.064 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-17 13:57:24.065 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-17 13:57:24.065 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-17 13:57:24.836 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-17 13:57:24.858 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-17 13:57:25.339 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-17 13:57:25.350 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-17 13:57:25.363 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-17 13:57:25.515 [main] INFO  com.soft1851.user.Application - Started Application in 6.264 seconds (JVM running for 7.297)
+2020-11-17 13:57:54.732 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-17 13:57:54.732 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-17 13:57:54.740 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-11-17 13:59:10.681 [http-nio-8003-exec-2] INFO  c.s.u.service.impl.UserServiceImpl - 从数据库获取用户信息
+2020-11-17 13:59:10.721 [http-nio-8003-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-17 13:59:11.060 [http-nio-8003-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-17 14:02:23.474 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-17 14:02:23.852 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-17 14:02:24.433 [main] INFO  com.soft1851.user.Application - The following profiles are active: dev
+2020-11-17 14:02:25.018 [main] WARN  t.m.s.a.MapperScannerRegistrar - 只有 Spring Boot 环境中可以通过 Environment(配置文件,环境变量,运行参数等方式) 配置通用 Mapper，其他环境请通过 @MapperScan 注解中的 mapperHelperRef 或 properties 参数进行配置!如果你使用 tk.mybatis.mapper.session.Configuration 配置的通用 Mapper，你可以忽略该错误!
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at tk.mybatis.spring.mapper.SpringBootBindUtil$SpringBoot2Bind.bind(SpringBootBindUtil.java:133)
+	at tk.mybatis.spring.mapper.SpringBootBindUtil.bind(SpringBootBindUtil.java:58)
+	at tk.mybatis.spring.mapper.ClassPathMapperScanner.setMapperProperties(ClassPathMapperScanner.java:278)
+	at tk.mybatis.spring.annotation.MapperScannerRegistrar.registerBeanDefinitions(MapperScannerRegistrar.java:103)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:384)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$$Lambda$159/25995971.accept(Unknown Source)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:676)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:383)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.soft1851.user.Application.main(Application.java:21)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at tk.mybatis.spring.mapper.SpringBootBindUtil$SpringBoot2Bind.bind(SpringBootBindUtil.java:125)
+	... 24 common frames omitted
+Caused by: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'mapper.mappers' to java.util.List<java.lang.Class<?>>
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:363)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:323)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$4(Binder.java:447)
+	at org.springframework.boot.context.properties.bind.Binder$$Lambda$48/7764562.bindProperty(Unknown Source)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:92)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:80)
+	at org.springframework.boot.context.properties.bind.JavaBeanBinder.bind(JavaBeanBinder.java:56)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$5(Binder.java:451)
+	at org.springframework.boot.context.properties.bind.Binder$$Lambda$49/9394519.get(Unknown Source)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:571)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withDataObject(Binder.java:557)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$300(Binder.java:512)
+	at org.springframework.boot.context.properties.bind.Binder.bindDataObject(Binder.java:449)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:390)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:319)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:308)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:238)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:199)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:186)
+	... 29 common frames omitted
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.List<java.lang.Class<?>>]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:321)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:194)
+	at org.springframework.boot.context.properties.bind.BindConverter$CompositeConversionService.convert(BindConverter.java:170)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:96)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.convert(IndexedElementsBinder.java:143)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindValue(IndexedElementsBinder.java:96)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindIndexed(IndexedElementsBinder.java:84)
+	at org.springframework.boot.context.properties.bind.IndexedElementsBinder.bindIndexed(IndexedElementsBinder.java:71)
+	at org.springframework.boot.context.properties.bind.CollectionBinder.bindAggregate(CollectionBinder.java:49)
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:56)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$3(Binder.java:414)
+	at org.springframework.boot.context.properties.bind.Binder$$Lambda$61/19111293.get(Unknown Source)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:571)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:512)
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:414)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:375)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:319)
+	... 46 common frames omitted
+2020-11-17 14:02:25.206 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-17 14:02:25.208 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-17 14:02:25.238 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 Redis repository interfaces.
+2020-11-17 14:02:25.380 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.user]' package. Please check your configuration.
+2020-11-17 14:02:25.450 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3fc9877a-7a6c-3968-8d76-ab2c6ae8b505
+2020-11-17 14:02:25.756 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+2020-11-17 14:02:25.766 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+2020-11-17 14:02:25.767 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-17 14:02:25.767 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-17 14:02:25.902 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-17 14:02:25.902 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1451 ms
+2020-11-17 14:02:27.079 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-17 14:02:27.079 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-17 14:02:27.083 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-17 14:02:27.083 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-17 14:02:27.176 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-17 14:02:27.275 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-17 14:02:27.276 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-17 14:02:27.276 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-17 14:02:27.276 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-17 14:02:28.020 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-17 14:02:28.041 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-17 14:02:28.500 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-17 14:02:28.511 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-17 14:02:28.522 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-17 14:02:28.662 [main] INFO  com.soft1851.user.Application - Started Application in 6.129 seconds (JVM running for 7.263)
