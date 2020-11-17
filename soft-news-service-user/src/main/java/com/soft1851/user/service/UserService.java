@@ -12,6 +12,14 @@ import com.soft1851.pojo.AppUser;
 public interface UserService {
 
     /**
+     * 根据用户主键获得用户信息
+     *
+     * @param userId 用户id
+     * @return AppUser
+     */
+    public AppUser getUser(String userId);
+
+    /**
      * 判断用户是否存在，如果存在返回user信息
      *
      * @param mobile 手机号

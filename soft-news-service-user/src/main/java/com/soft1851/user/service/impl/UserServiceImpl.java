@@ -39,6 +39,11 @@ public class UserServiceImpl implements UserService {
     public static final String USER_FACE0 = "https://yuxis.oss-cn-beijing.aliyuncs.com/audio-book/face/face.jpg";
 
     @Override
+    public AppUser getUser(String userId) {
+        return appUserMapper.selectByPrimaryKey(userId);
+    }
+
+    @Override
     public AppUser queryMobileIsExist(String mobile) {
         Example userExample = new Example(AppUser.class);
         Example.Criteria userCriteria = userExample.createCriteria();
