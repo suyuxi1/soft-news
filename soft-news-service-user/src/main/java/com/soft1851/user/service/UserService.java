@@ -1,6 +1,7 @@
 package com.soft1851.user.service;
 
 import com.soft1851.pojo.AppUser;
+import com.soft1851.pojo.bo.UpdateUserInfoBO;
 
 /**
  * @author Su
@@ -10,6 +11,13 @@ import com.soft1851.pojo.AppUser;
  * @Version 1.0
  **/
 public interface UserService {
+
+    /**
+     * 更新用户信息
+     *
+     * @param updateUserInfoBO 入参
+     */
+    void UpdateUserInfo(UpdateUserInfoBO updateUserInfoBO);
 
     /**
      * 根据用户主键获得用户信息
