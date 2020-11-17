@@ -5,5 +5,7 @@ com\soft1851\my\mapper\MyMapper.class
 com\soft1851\api\interceptors\PassportInterceptor.class
 com\soft1851\api\config\InterceptorConfig.class
 com\soft1851\api\controller\user\HelloControllerApi.class
+com\soft1851\api\interceptors\BaseInterceptor.class
+com\soft1851\api\interceptors\UserTokenInterceptor.class
 com\soft1851\api\BaseController.class
 com\soft1851\api\config\Swagger2.class
