@@ -18,7 +18,7 @@ public enum UserStatus {
      */
 
     INACTIVE(0, "未激活"),
-    Active(1, "已激活"),
+    ACTIVE(1, "已激活"),
     FROZEN(2, "已冻结");
 
     public final Integer type;
@@ -31,7 +31,7 @@ public enum UserStatus {
 
     public static boolean isUserStatusValid(Integer tempStatus) {
         if (tempStatus != null) {
-            if (tempStatus == INACTIVE.type || tempStatus == Active.type || tempStatus == FROZEN.type) {
+            if (tempStatus == INACTIVE.type || tempStatus == ACTIVE.type || tempStatus == FROZEN.type) {
                 return true;
             }
         }

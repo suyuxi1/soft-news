@@ -56,7 +56,7 @@ public class UserServiceImpl implements UserService {
         BeanUtils.copyProperties(updateUserInfoBO, userInfo);
 
         userInfo.setUpdatedTime(new Date());
-        userInfo.setActiveStatus(UserStatus.Active.type);
+        userInfo.setActiveStatus(UserStatus.ACTIVE.type);
 
         int result = appUserMapper.updateByPrimaryKeySelective(userInfo);
         if (result != 1){
