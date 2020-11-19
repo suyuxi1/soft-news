@@ -10,4 +10,5 @@ D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft185
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\user\PassportControllerApi.java
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\UserTokenInterceptor.java
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\aspect\ServiceLogAspect.java
+D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\files\FileUploadControllerApi.java
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\config\CorsConfig.java
