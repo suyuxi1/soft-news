@@ -30,4 +30,15 @@ public interface FileUploadControllerApi {
     @ApiOperation(value = "上传用户头像", notes = "上传用户头像", httpMethod = "POST")
     @PostMapping("uploadFace")
     GraceResult uploadFace(@RequestParam String userId, MultipartFile file) throws Exception;
+
+    /**
+     * 用阿里与OSS上传多个文件
+     *
+     * @param userId 用户id
+     * @param files  文件
+     * @return  封装结果
+     * @throws Exception 异常
+     */
+    @PostMapping("/uploadSomeFiles")
+    GraceResult uploadSomeFiles(@RequestParam String userId, MultipartFile[] files) throws Exception;
 }
