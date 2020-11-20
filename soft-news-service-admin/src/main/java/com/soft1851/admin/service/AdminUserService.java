@@ -2,6 +2,7 @@ package com.soft1851.admin.service;
 
 import com.soft1851.pojo.AdminUser;
 import com.soft1851.pojo.bo.NewAdminBO;
+import com.soft1851.utils.PageGridResult;
 
 /**
  * @author Su
@@ -27,4 +28,14 @@ public interface AdminUserService {
      * @param newAdminBO 入参
      */
     void createAdminUser(NewAdminBO newAdminBO);
+
+
+    /**
+     * 分页查询管理员
+     *
+     * @param page 当前页
+     * @param pageSize 条数
+     * @return PageGridResult
+     */
+    PageGridResult queryAdminList(Integer page, Integer pageSize);
 }
