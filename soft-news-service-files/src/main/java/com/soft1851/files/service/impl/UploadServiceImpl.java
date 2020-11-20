@@ -24,7 +24,6 @@ import java.io.InputStream;
  **/
 @Service
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-
 public class UploadServiceImpl implements UploadService {
 
     public final FastFileStorageClient fastFileStorageClient;
