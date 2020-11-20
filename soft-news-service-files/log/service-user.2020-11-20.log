@@ -29,3 +29,11 @@
 2020-11-20 15:29:17.170 [http-nio-8004-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：306
 2020-11-20 15:29:17.170 [http-nio-8004-exec-4] INFO  c.s.f.c.FileUploadController - path = group1/M00/00/00/eBmVnF-3cE2AHe1RAAAZ8ldav-g748.jpg
 2020-11-20 15:29:17.170 [http-nio-8004-exec-4] INFO  c.s.f.c.FileUploadController - http://120.25.149.156:8888/group1/M00/00/00/eBmVnF-3cE2AHe1RAAAZ8ldav-g748.jpg
+2020-11-20 15:35:45.370 [http-nio-8004-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadFdfs====
+2020-11-20 15:35:45.713 [http-nio-8004-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：342
+2020-11-20 15:35:45.713 [http-nio-8004-exec-2] INFO  c.s.f.c.FileUploadController - path = group1/M00/00/00/eBmVnF-3cdGAMi8XAAV8pULw3d8927.png
+2020-11-20 15:35:45.713 [http-nio-8004-exec-2] INFO  c.s.f.c.FileUploadController - http://120.25.149.156:8888/group1/M00/00/00/eBmVnF-3cdGAMi8XAAV8pULw3d8927.png
+2020-11-20 15:39:17.583 [http-nio-8004-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadFdfs====
+2020-11-20 15:39:17.754 [http-nio-8004-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：171
+2020-11-20 15:39:17.754 [http-nio-8004-exec-5] INFO  c.s.f.c.FileUploadController - path = group1/M00/00/00/eBmVnF-3cqWAQPNNAAa0wJh7kSU830.png
+2020-11-20 15:39:17.754 [http-nio-8004-exec-5] INFO  c.s.f.c.FileUploadController - http://120.25.149.156:8888/group1/M00/00/00/eBmVnF-3cqWAQPNNAAa0wJh7kSU830.png
