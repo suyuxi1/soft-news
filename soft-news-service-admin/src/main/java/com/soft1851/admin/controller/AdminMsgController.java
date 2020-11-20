@@ -6,8 +6,10 @@ import com.soft1851.api.controller.admin.AdminMsgControllerApi;
 import com.soft1851.exception.GraceException;
 import com.soft1851.pojo.AdminUser;
 import com.soft1851.pojo.bo.AdminLoginBO;
+import com.soft1851.pojo.bo.NewAdminBO;
 import com.soft1851.result.GraceResult;
 import com.soft1851.result.ResponseStatusEnum;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,15 +35,15 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
     public GraceResult adminLogin(AdminLoginBO adminLoginBO, HttpServletRequest request, HttpServletResponse response) {
         //查询用户是否存在
         AdminUser admin = adminUserService.queryAdminByUsername(adminLoginBO.getUsername());
-        if (admin == null){
+        if (admin == null) {
             return GraceResult.errorCustom(ResponseStatusEnum.ADMIN_NOT_EXIT_ERROR);
         }
         //判断密码是否匹配
         boolean isPwdMath = BCrypt.checkpw(adminLoginBO.getPassword(), admin.getPassword());
-        if (isPwdMath){
+        if (isPwdMath) {
             doLoginSetting(admin, request, response);
             return GraceResult.ok();
-        }else {
+        } else {
             //密码不匹配
             return GraceResult.errorCustom(ResponseStatusEnum.ADMIN_NOT_EXIT_ERROR);
         }
@@ -53,19 +55,43 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
         return GraceResult.ok();
     }
 
-    private void  checkAdminExist(String username){
+    @Override
+    public GraceResult addNewAdmin(HttpServletRequest request, HttpServletResponse response, NewAdminBO newAdminBO) {
+        //1.base64不为空，则代表人脸入库，否则需要用户输入密码和确认密码
+        if (StringUtils.isBlank(newAdminBO.getImg64())) {
+            if (StringUtils.isBlank(newAdminBO.getPassword()) ||
+                    StringUtils.isBlank(newAdminBO.getConfirmPassword())
+            ) {
+                return GraceResult.errorCustom(ResponseStatusEnum.ADMIN_PASSWORD_NULL_ERROR);
+            }
+        }
+        //2.密码不为空，则必须判断两次输入一致
+        if (StringUtils.isNotBlank(newAdminBO.getPassword())) {
+            if (!newAdminBO.getPassword()
+                    .equalsIgnoreCase(newAdminBO.getConfirmPassword())) {
+                return GraceResult.errorCustom(ResponseStatusEnum.ADMIN_PASSWORD_ERROR);
+            }
+        }
+        //3.校验用户名唯一
+        checkAdminExist(newAdminBO.getUsername());
+        //4.调用service存入admin信息
+        adminUserService.createAdminUser(newAdminBO);
+        return GraceResult.ok();
+    }
+
+    private void checkAdminExist(String username) {
         AdminUser admin = adminUserService.queryAdminByUsername(username);
-        if (admin != null){
+        if (admin != null) {
             GraceException.display(ResponseStatusEnum.ADMIN_USERNAME_EXIST_ERROR);
         }
     }
 
-    private void doLoginSetting(AdminUser admin, HttpServletRequest request, HttpServletResponse response){
+    private void doLoginSetting(AdminUser admin, HttpServletRequest request, HttpServletResponse response) {
         //保存token放入到redis中
         String token = UUID.randomUUID().toString();
         redis.set(REDIS_ADMIN_TOKEN + ":" + admin.getId(), token);
         //保存admin登录基本token信息到cookie中
-        setCookie(request,response,"aToken", token, COOKIE_MONTH);
+        setCookie(request, response, "aToken", token, COOKIE_MONTH);
         setCookie(request, response, "aId", admin.getId(), COOKIE_MONTH);
         setCookie(request, response, "aName", admin.getAdminName(), COOKIE_MONTH);
     }
