@@ -22,8 +22,8 @@ public interface FileUploadControllerApi {
     /**
      * 上传用户头像
      *
-     * @param userId     用户id
-     * @param file       文件对象
+     * @param userId 用户id
+     * @param file   文件对象
      * @return 封装结果
      * @throws Exception 异常
      */
@@ -36,9 +36,19 @@ public interface FileUploadControllerApi {
      *
      * @param userId 用户id
      * @param files  文件
-     * @return  封装结果
+     * @return 封装结果
      * @throws Exception 异常
      */
     @PostMapping("/uploadSomeFiles")
     GraceResult uploadSomeFiles(@RequestParam String userId, MultipartFile[] files) throws Exception;
+
+    /*管理员人脸入库
+     * @param username 管理员用户名
+     * @param multipartFile 人脸照片文件
+     * @return GraceResult
+     * @throws Exception 异常
+     */
+    @ApiOperation(value = "管理员人脸入库", notes = "管理员人脸入库", httpMethod = "POST")
+    @PostMapping("uploadToGridFS")
+    GraceResult uploadToGridFs(@RequestParam String username, @RequestParam(value = "file") MultipartFile multipartFile) throws Exception;
 }

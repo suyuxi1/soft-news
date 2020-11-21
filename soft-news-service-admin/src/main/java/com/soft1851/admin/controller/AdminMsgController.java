@@ -81,6 +81,12 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
     }
 
     @Override
+    public GraceResult updateAdmin(HttpServletRequest request, HttpServletResponse response, NewAdminBO newAdminBO) {
+        AdminUser adminUser = adminUserService.updateAdmin(newAdminBO.getUsername(), newAdminBO.getFaceId());
+        return GraceResult.ok(adminUser);
+    }
+
+    @Override
     public GraceResult getAdminList(Integer page, Integer pageSize) {
         if (page == null) {
             page = COMMON_START_PAGE;

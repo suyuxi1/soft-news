@@ -71,6 +71,14 @@ public class AdminUserServiceImpl implements AdminUserService {
     }
 
     @Override
+    public AdminUser updateAdmin(String username, String faceId) {
+        AdminUser adminUser = queryAdminByUsername(username);
+        adminUser.setFaceId(faceId);
+        adminUserMapper.updateByPrimaryKey(adminUser);
+        return adminUser;
+    }
+
+    @Override
     public PageGridResult queryAdminList(Integer page, Integer pageSize) {
         Example adminExample = new Example(AdminUser.class);
         adminExample.orderBy("createdTime").desc();
