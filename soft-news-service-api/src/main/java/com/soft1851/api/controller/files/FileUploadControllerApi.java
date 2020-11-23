@@ -3,10 +3,14 @@ package com.soft1851.api.controller.files;
 import com.soft1851.result.GraceResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * @author Su
@@ -51,4 +55,30 @@ public interface FileUploadControllerApi {
     @ApiOperation(value = "管理员人脸入库", notes = "管理员人脸入库", httpMethod = "POST")
     @PostMapping("uploadToGridFS")
     GraceResult uploadToGridFs(@RequestParam String username, @RequestParam(value = "file") MultipartFile multipartFile) throws Exception;
+
+
+    /**
+     * 从gridFS中读取文件
+     *
+     * @param faceId   人脸id
+     * @param request  请求
+     * @param response 响应
+     * @throws Exception 异常
+     */
+    @ApiOperation(value = "从gridFS中读取文件", notes = "从gridFS中读取文件", httpMethod = "GET")
+    @GetMapping("readInGridFS")
+    GraceResult readInGridFs(@RequestParam String faceId, HttpServletRequest request, HttpServletResponse response) throws Exception;
+
+
+    /**
+     * 从gridfs中读取图片内容，并且返回base64
+     *
+     * @param faceId   人脸id
+     * @param request  请求
+     * @param response 响应
+     * @return GraceResult
+     * @throws Exception 异常
+     */
+    @GetMapping("/readFace64")
+    GraceResult readFace64(@RequestParam String faceId, HttpServletRequest request, HttpServletResponse response) throws Exception;
 }

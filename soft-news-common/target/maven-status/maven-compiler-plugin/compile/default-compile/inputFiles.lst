@@ -28,8 +28,10 @@ D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\enu
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\utils\RedisOperator.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\org\n3r\idworker\DayCode.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\utils\DesensitizationUtil.java
+D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\utils\FaceVerifyUtil.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\org\n3r\idworker\utils\Serializes.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\org\n3r\idworker\WorkerIdStrategy.java
+D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\enums\FaceVerifyType.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\result\GraceResult.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\org\n3r\idworker\IdWorker.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\utils\PageGridResult.java
