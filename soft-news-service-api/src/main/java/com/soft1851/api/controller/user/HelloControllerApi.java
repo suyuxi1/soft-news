@@ -1,5 +1,6 @@
 package com.soft1851.api.controller.user;
 
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  **/
 public interface HelloControllerApi {
 
+    @ApiOperation(value = "测试", tags = "测试")
     @GetMapping("/hello")
     Object hello();
 }

@@ -5,9 +5,11 @@ D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft185
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\UserActiveInterceptor.java
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\admin\AdminMsgControllerApi.java
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\BaseInterceptor.java
+D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\article\ArticleControllerApi.java
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\interceptors\AdminTokenInterceptor.java
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\admin\FriendLinkControllerApi.java
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\user\HelloControllerApi.java
+D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\category\CategoryControllerApi.java
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\BaseController.java
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\user\UserControllerApi.java
 D:\Downloads\idea code\soft-news\soft-news-service-api\src\main\java\com\soft1851\api\controller\user\PassportControllerApi.java

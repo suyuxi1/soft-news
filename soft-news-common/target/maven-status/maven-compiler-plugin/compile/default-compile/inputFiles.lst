@@ -21,6 +21,7 @@ D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\uti
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\org\n3r\idworker\Code.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\exception\GraceException.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\org\n3r\idworker\utils\IPv4Utils.java
+D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\enums\ArticleReviewStatus.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\exception\MyCustomException.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\utils\extend\AliImageReviewUtil.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\org\n3r\idworker\utils\Ip.java
@@ -28,6 +29,7 @@ D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\org\n3r\idworker
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\enums\ArticleReviewLevel.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\utils\RedisOperator.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\org\n3r\idworker\DayCode.java
+D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\enums\YesOrNo.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\utils\DesensitizationUtil.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\utils\FaceVerifyUtil.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\org\n3r\idworker\utils\Serializes.java
@@ -36,4 +38,6 @@ D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\enu
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\result\GraceResult.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\org\n3r\idworker\IdWorker.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\utils\PageGridResult.java
+D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\enums\ArticleAppointType.java
+D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\enums\ArticleCoverType.java
 D:\Downloads\idea code\soft-news\soft-news-common\src\main\java\com\soft1851\utils\JsonUtil.java
