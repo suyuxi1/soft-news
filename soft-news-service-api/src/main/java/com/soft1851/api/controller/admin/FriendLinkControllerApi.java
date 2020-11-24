@@ -22,13 +22,23 @@ import javax.validation.Valid;
 @RequestMapping("friendLink")
 public interface FriendLinkControllerApi {
 
-/**
- *新增或者修改友情链接
- * @param saveFriendLinkBO 入参
- * @param result 校验结果
- * @return GraceResult
- */
- @ApiOperation(value = "新增或者修改友情链接",notes="新增或者修改友情链接",httpMethod="POST")
- @PostMapping("/saveOrUpdateFriendLink")
- GraceResult saveOrUpdateFriendLink(@RequestBody @Valid SaveFriendLinkBO saveFriendLinkBO, BindingResult result);
+    /**
+     * 新增或者修改友情链接
+     *
+     * @param saveFriendLinkBO 入参
+     * @param result           校验结果
+     * @return GraceResult
+     */
+    @ApiOperation(value = "新增或者修改友情链接", notes = "新增或者修改友情链接", httpMethod = "POST")
+    @PostMapping("/saveOrUpdateFriendLink")
+    GraceResult saveOrUpdateFriendLink(@RequestBody @Valid SaveFriendLinkBO saveFriendLinkBO, BindingResult result);
+
+ /**
+  *查询友情链接列表
+  * @return GraceResult
+  */
+ @PostMapping("getFriendLinkList")
+ @ApiOperation(value="查询友情链接列表",notes="查询友情链接列表",httpMethod="POST")
+ GraceResult getFriendLinkList();
+
 }

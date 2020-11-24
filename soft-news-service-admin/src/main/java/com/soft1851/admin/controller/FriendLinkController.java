@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -29,6 +30,12 @@ import java.util.Map;
 public class FriendLinkController extends BaseController implements FriendLinkControllerApi {
 
     private final FriendLinkService friendLinkService;
+
+    @Override
+    public GraceResult getFriendLinkList() {
+        List<FriendLinkMO> list = friendLinkService.queryAllFriendLinkList();
+        return GraceResult.ok(list);
+    }
 
     @Override
     public GraceResult saveOrUpdateFriendLink(@Valid SaveFriendLinkBO saveFriendLinkB0, BindingResult result) {
