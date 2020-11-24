@@ -30,6 +30,7 @@ org\n3r\idworker\utils\Utils.class
 org\n3r\idworker\DayCode.class
 org\n3r\idworker\strategy\DayPrefixRandomCodeStrategy.class
 org\n3r\idworker\IdWorker.class
+com\soft1851\utils\UrlUtil.class
 org\n3r\idworker\strategy\DefaultWorkerIdStrategy$1.class
 com\soft1851\enums\UserStatus.class
 com\soft1851\enums\FaceVerifyType.class

@@ -14,3 +14,4 @@ com\soft1851\api\controller\files\FileUploadControllerApi.class
 com\soft1851\api\interceptors\BaseInterceptor.class
 com\soft1851\api\interceptors\UserTokenInterceptor.class
 com\soft1851\api\config\Swagger2.class
+com\soft1851\api\controller\admin\FriendLinkControllerApi.class

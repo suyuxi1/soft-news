@@ -273,3 +273,7 @@ Caused by: java.net.SocketException: Network is unreachable: connect
 2020-11-23 23:17:44.138 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
 2020-11-23 23:17:44.146 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
 2020-11-23 23:17:44.293 [main] INFO  com.soft1851.files.Application - Started Application in 6.608 seconds (JVM running for 7.535)
+2020-11-23 23:21:19.397 [http-nio-8004-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-23 23:21:19.397 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-23 23:21:19.409 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-11-23 23:21:20.054 [http-nio-8004-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:82}] to 120.25.149.156:27017
