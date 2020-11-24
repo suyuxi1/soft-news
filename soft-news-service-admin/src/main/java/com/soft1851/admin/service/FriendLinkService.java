@@ -27,4 +27,11 @@ public interface FriendLinkService {
      * @return List<FriendLinkMO>
      */
     List<FriendLinkMO> queryAllFriendLinkList();
+
+    /**
+     * 删除友情列表
+     *
+     * @param linkId 链接id
+     */
+    void delete (String linkId);
 }

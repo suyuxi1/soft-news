@@ -51,4 +51,10 @@ public class FriendLinkController extends BaseController implements FriendLinkCo
         friendLinkService.saveOrUpdateFriendLink(saveFriendLinkMQ);
         return GraceResult.ok();
     }
+
+    @Override
+    public GraceResult delete(String linkId) {
+        friendLinkService.delete(linkId);
+        return GraceResult.ok();
+    }
 }

@@ -997,3 +997,7 @@ Caused by: java.net.SocketTimeoutException: connect timed out
 2020-11-24 13:51:21.613 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
 2020-11-24 13:51:22.801 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
 2020-11-24 13:51:22.842 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2020-11-24 13:51:23.407 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-24 13:51:23.423 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-24 13:51:23.434 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-24 13:51:23.588 [main] INFO  com.soft1851.files.FilesApplication - Started FilesApplication in 7.864 seconds (JVM running for 8.763)
