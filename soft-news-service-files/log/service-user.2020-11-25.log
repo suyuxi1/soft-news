@@ -1,0 +1,99 @@
+2020-11-25 09:38:53.614 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-25 09:38:53.946 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 09:38:54.376 [main] INFO  com.soft1851.files.FilesApplication - The following profiles are active: dev
+2020-11-25 09:38:55.127 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 09:38:55.128 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 09:38:55.141 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 MongoDB repository interfaces.
+2020-11-25 09:38:55.151 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 09:38:55.152 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 09:38:55.159 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 Redis repository interfaces.
+2020-11-25 09:38:55.331 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=08281b5c-4eaa-3c0c-883b-2e83f35402ec
+2020-11-25 09:38:55.670 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2020-11-25 09:38:55.679 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2020-11-25 09:38:55.679 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 09:38:55.680 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 09:38:55.792 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 09:38:55.793 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1404 ms
+2020-11-25 09:38:56.206 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[120.25.149.156:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-25 09:38:56.305 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 09:38:56.328 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 09:38:56.350 [cluster-ClusterId{value='5fbdb5b0c47a6a3bc70ac3de', description='null'}-120.25.149.156:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:166}] to 120.25.149.156:27017
+2020-11-25 09:38:56.390 [cluster-ClusterId{value='5fbdb5b0c47a6a3bc70ac3de', description='null'}-120.25.149.156:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=120.25.149.156:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=37098700}
+2020-11-25 09:38:56.888 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 09:38:56.888 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 09:38:56.891 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 09:38:56.891 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 09:38:57.008 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 09:38:57.670 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2020-11-25 09:38:57.703 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2020-11-25 09:38:58.043 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-25 09:38:58.053 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-25 09:38:58.060 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-25 09:38:58.182 [main] INFO  com.soft1851.files.FilesApplication - Started FilesApplication in 5.34 seconds (JVM running for 6.401)
+2020-11-25 09:39:08.230 [http-nio-8004-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-25 09:39:08.230 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-25 09:39:08.238 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-11-25 10:15:54.074 [http-nio-8004-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 10:15:55.083 [http-nio-8004-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1009
+2020-11-25 10:16:39.839 [http-nio-8004-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 10:16:40.000 [http-nio-8004-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：161
+2020-11-25 10:21:10.249 [http-nio-8004-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 10:21:10.405 [http-nio-8004-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：155
+2020-11-25 10:26:24.897 [http-nio-8004-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 10:26:25.095 [http-nio-8004-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：197
+2020-11-25 10:29:24.677 [http-nio-8004-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 10:29:24.809 [http-nio-8004-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：131
+2020-11-25 10:32:08.570 [http-nio-8004-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 10:32:08.765 [http-nio-8004-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：195
+2020-11-25 10:33:53.092 [http-nio-8004-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 10:33:53.235 [http-nio-8004-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：143
+2020-11-25 10:34:18.414 [http-nio-8004-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 10:34:18.596 [http-nio-8004-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：181
+2020-11-25 10:40:07.845 [http-nio-8004-exec-10] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 10:40:08.020 [http-nio-8004-exec-10] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：175
+2020-11-25 10:40:49.606 [http-nio-8004-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 10:40:49.799 [http-nio-8004-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：193
+2020-11-25 10:46:30.163 [http-nio-8004-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 10:46:30.316 [http-nio-8004-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：153
+2020-11-25 10:54:58.513 [http-nio-8004-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 10:54:58.724 [http-nio-8004-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：210
+2020-11-25 11:01:36.558 [http-nio-8004-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 11:01:36.701 [http-nio-8004-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：142
+2020-11-25 11:02:02.684 [http-nio-8004-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 11:02:02.803 [http-nio-8004-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：119
+2020-11-25 11:16:02.590 [http-nio-8004-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 11:16:02.761 [http-nio-8004-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：171
+2020-11-25 11:16:08.889 [http-nio-8004-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 11:16:09.045 [http-nio-8004-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：156
+2020-11-25 11:25:01.089 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-25 11:25:01.387 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 11:25:01.820 [main] INFO  com.soft1851.files.FilesApplication - The following profiles are active: dev
+2020-11-25 11:25:02.537 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:25:02.538 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 11:25:02.550 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 MongoDB repository interfaces.
+2020-11-25 11:25:02.559 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:25:02.560 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 11:25:02.567 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-25 11:25:02.737 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=08281b5c-4eaa-3c0c-883b-2e83f35402ec
+2020-11-25 11:25:03.076 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2020-11-25 11:25:03.084 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2020-11-25 11:25:03.085 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 11:25:03.085 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 11:25:03.193 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 11:25:03.193 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1359 ms
+2020-11-25 11:25:03.593 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[120.25.149.156:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-25 11:25:03.683 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 11:25:03.708 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 11:25:03.737 [cluster-ClusterId{value='5fbdce8f91833209e1ef56fc', description='null'}-120.25.149.156:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:169}] to 120.25.149.156:27017
+2020-11-25 11:25:03.781 [cluster-ClusterId{value='5fbdce8f91833209e1ef56fc', description='null'}-120.25.149.156:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=120.25.149.156:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=40411800}
+2020-11-25 11:25:04.398 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 11:25:04.398 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 11:25:04.402 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 11:25:04.403 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 11:25:04.620 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 11:25:05.639 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2020-11-25 11:25:05.670 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2020-11-25 11:25:06.420 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-25 11:25:06.439 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-25 11:25:06.457 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-25 11:25:06.767 [main] INFO  com.soft1851.files.FilesApplication - Started FilesApplication in 6.496 seconds (JVM running for 7.417)

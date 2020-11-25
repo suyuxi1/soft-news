@@ -1,0 +1,245 @@
+2020-11-25 09:13:07.511 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-25 09:13:08.105 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 09:13:08.910 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-25 09:13:11.394 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 09:13:11.396 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 09:13:11.480 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76ms. Found 0 MongoDB repository interfaces.
+2020-11-25 09:13:11.506 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 09:13:11.508 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 09:13:11.520 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-25 09:13:11.717 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-25 09:13:11.806 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=aecc0bd6-6fd8-31c5-8eab-cd4e875dd50f
+2020-11-25 09:13:12.492 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-25 09:13:12.503 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-25 09:13:12.503 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 09:13:12.504 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 09:13:12.657 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 09:13:12.657 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3555 ms
+2020-11-25 09:13:14.694 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 09:13:14.694 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 09:13:14.717 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 09:13:14.717 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 09:13:14.930 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 09:13:15.067 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-25 09:13:15.067 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-25 09:13:15.068 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-25 09:13:15.068 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-25 09:13:15.367 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[120.25.149.156:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-25 09:13:15.554 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 09:13:15.564 [cluster-ClusterId{value='5fbdafab67f4c80589a60372', description='null'}-120.25.149.156:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:165}] to 120.25.149.156:27017
+2020-11-25 09:13:15.596 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 09:13:15.601 [cluster-ClusterId{value='5fbdafab67f4c80589a60372', description='null'}-120.25.149.156:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=120.25.149.156:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=34890000}
+2020-11-25 09:13:17.746 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-11-25 09:13:17.804 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-25 09:13:18.159 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-25 09:13:18.690 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-25 09:13:18.698 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-25 09:13:19.366 [main] INFO  c.s.article.ArticleApplication - Started ArticleApplication in 13.951 seconds (JVM running for 17.288)
+2020-11-25 09:13:42.393 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-25 09:13:42.393 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-25 09:13:42.413 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+2020-11-25 10:39:57.627 [http-nio-8001-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.createArticle====
+2020-11-25 10:39:57.790 [http-nio-8001-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-25 10:39:58.642 [http-nio-8001-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-25 10:39:58.815 [http-nio-8001-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1187
+2020-11-25 10:46:31.300 [http-nio-8001-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.createArticle====
+2020-11-25 10:46:31.501 [http-nio-8001-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：201
+2020-11-25 11:02:14.233 [http-nio-8001-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.createArticle====
+2020-11-25 11:02:14.399 [http-nio-8001-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：166
+2020-11-25 11:16:39.786 [http-nio-8001-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.createArticle====
+2020-11-25 11:16:40.021 [http-nio-8001-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：235
+2020-11-25 11:25:11.957 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-25 11:25:12.247 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 11:25:12.675 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-25 11:25:13.400 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:25:13.401 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 11:25:13.420 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 MongoDB repository interfaces.
+2020-11-25 11:25:13.429 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:25:13.429 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 11:25:13.438 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-25 11:25:13.578 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-25 11:25:13.650 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=b3ef1737-b3cf-3ae2-9cf5-e7ad6551b8b0
+2020-11-25 11:25:14.057 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-25 11:25:14.065 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-25 11:25:14.066 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 11:25:14.066 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 11:25:14.175 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 11:25:14.175 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1484 ms
+2020-11-25 11:25:15.013 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskPublishArticle' defined in file [D:\Downloads\idea code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\task\TaskPublishArticle.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'publishArticles': Cron expression must consist of 6 fields (found 1 in "0/10****?")
+2020-11-25 11:25:15.134 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-25 11:25:15.143 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-25 11:25:15.178 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskPublishArticle' defined in file [D:\Downloads\idea code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\task\TaskPublishArticle.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'publishArticles': Cron expression must consist of 6 fields (found 1 in "0/10****?")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.soft1851.article.ArticleApplication.main(ArticleApplication.java:22)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'publishArticles': Cron expression must consist of 6 fields (found 1 in "0/10****?")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:511)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$null$1(ScheduledAnnotationBeanPostProcessor.java:374)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:374)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:430)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 16 common frames omitted
+2020-11-25 11:28:32.933 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-25 11:28:33.239 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 11:28:33.696 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-25 11:28:34.480 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:28:34.481 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 11:28:34.499 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 MongoDB repository interfaces.
+2020-11-25 11:28:34.508 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:28:34.509 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 11:28:34.517 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-25 11:28:34.651 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-25 11:28:34.732 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=b3ef1737-b3cf-3ae2-9cf5-e7ad6551b8b0
+2020-11-25 11:28:35.156 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-25 11:28:35.166 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-25 11:28:35.166 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 11:28:35.166 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 11:28:35.280 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 11:28:35.280 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1569 ms
+2020-11-25 11:28:36.227 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskPublishArticle' defined in file [D:\Downloads\idea code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\task\TaskPublishArticle.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'publishArticles': Cron expression must consist of 6 fields (found 1 in "0/10****?")
+2020-11-25 11:28:36.242 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-11-25 11:28:36.252 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-25 11:28:36.263 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskPublishArticle' defined in file [D:\Downloads\idea code\soft-news\soft-news-service-article\target\classes\com\soft1851\article\task\TaskPublishArticle.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'publishArticles': Cron expression must consist of 6 fields (found 1 in "0/10****?")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.soft1851.article.ArticleApplication.main(ArticleApplication.java:22)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'publishArticles': Cron expression must consist of 6 fields (found 1 in "0/10****?")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:511)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$null$1(ScheduledAnnotationBeanPostProcessor.java:374)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:374)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:430)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 16 common frames omitted
+2020-11-25 11:30:15.466 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-25 11:30:15.743 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 11:30:16.167 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-25 11:30:16.922 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:30:16.922 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 11:30:16.940 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 MongoDB repository interfaces.
+2020-11-25 11:30:16.948 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:30:16.949 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 11:30:16.957 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-25 11:30:17.081 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-25 11:30:17.148 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=b3ef1737-b3cf-3ae2-9cf5-e7ad6551b8b0
+2020-11-25 11:30:17.614 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-25 11:30:17.623 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-25 11:30:17.623 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 11:30:17.623 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-25 11:30:17.750 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 11:30:17.750 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1569 ms
+2020-11-25 11:30:19.105 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 11:30:19.105 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 11:30:19.109 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 11:30:19.109 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 11:30:19.234 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 11:30:19.357 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-25 11:30:19.358 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-25 11:30:19.358 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-25 11:30:19.358 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-25 11:30:19.470 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[120.25.149.156:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-25 11:30:19.559 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 11:30:19.586 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 11:30:19.639 [cluster-ClusterId{value='5fbdcfcb93cd7138c1991042', description='null'}-120.25.149.156:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:170}] to 120.25.149.156:27017
+2020-11-25 11:30:19.681 [cluster-ClusterId{value='5fbdcfcb93cd7138c1991042', description='null'}-120.25.149.156:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=120.25.149.156:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=39094500}
+2020-11-25 11:30:19.811 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-11-25 11:30:20.360 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-11-25 11:30:20.383 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-25 11:30:20.737 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-25 11:30:20.748 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-25 11:30:20.755 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-25 11:30:20.881 [main] INFO  c.s.article.ArticleApplication - Started ArticleApplication in 6.189 seconds (JVM running for 7.019)
+2020-11-25 11:30:30.014 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-25 11:30:30.228 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-25 11:30:30.234 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:30:30.285 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：50
+2020-11-25 11:30:40.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:30:40.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:30:50.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:30:50.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:31:00.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:31:00.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:31:10.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:31:10.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:31:20.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:31:20.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:31:30.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:31:30.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:31:38.868 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-25 11:31:38.868 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-25 11:31:38.877 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-11-25 11:31:40.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:31:40.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:31:50.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:31:50.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:32:00.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:32:00.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:32:10.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:32:10.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:32:20.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:32:20.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:32:30.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:32:30.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:32:40.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:32:40.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:32:50.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:32:50.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:32:55.928 [http-nio-8001-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.createArticle====
+2020-11-25 11:32:56.039 [http-nio-8001-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：111
+2020-11-25 11:33:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:33:00.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:33:10.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:33:10.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:33:20.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:33:20.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-25 11:33:30.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:33:30.024 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：16
+2020-11-25 11:33:40.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:33:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:33:50.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:33:50.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:34:00.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:34:00.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-25 11:34:10.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-25 11:34:10.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1

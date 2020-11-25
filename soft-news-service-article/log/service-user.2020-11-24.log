@@ -980,3 +980,80 @@ The dependencies of some of the beans in the application context form a cycle:
 2020-11-24 19:10:26.664 [http-nio-8001-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：253
 2020-11-24 19:13:55.288 [http-nio-8001-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.createArticle====
 2020-11-24 19:13:55.536 [http-nio-8001-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：248
+2020-11-24 20:14:18.884 [lettuce-nioEventLoop-4-1] INFO  i.l.core.protocol.CommandHandler - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-24 20:14:19.036 [lettuce-eventExecutorLoop-1-6] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /120.25.149.156:6379
+2020-11-24 20:14:30.149 [cluster-ClusterId{value='5fbce951b7ef3d2b77bd5494', description='null'}-120.25.149.156:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 120.25.149.156:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.SocketException: Network is unreachable: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:591)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-11-24 20:14:30.150 [lettuce-nioEventLoop-4-2] WARN  i.l.core.protocol.ConnectionWatchdog - Cannot reconnect to [120.25.149.156:6379]: Network is unreachable: no further information: /120.25.149.156:6379
+io.netty.channel.AbstractChannel$AnnotatedSocketException: Network is unreachable: no further information: /120.25.149.156:6379
+Caused by: java.net.SocketException: Network is unreachable: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-24 20:14:30.349 [lettuce-eventExecutorLoop-1-7] INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 120.25.149.156:6379
+2020-11-24 20:14:30.429 [lettuce-nioEventLoop-4-3] INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 120.25.149.156:6379
+2020-11-24 20:14:38.642 [DateSourceHikariCP housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - DateSourceHikariCP - Thread starvation or clock leap detected (housekeeper delta=44m26s791ms386µs400ns).
+2020-11-24 20:14:40.308 [cluster-ClusterId{value='5fbce951b7ef3d2b77bd5494', description='null'}-120.25.149.156:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:156}] to 120.25.149.156:27017
+2020-11-24 20:14:40.429 [cluster-ClusterId{value='5fbce951b7ef3d2b77bd5494', description='null'}-120.25.149.156:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=120.25.149.156:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=121278800}
+2020-11-24 23:11:10.612 [cluster-ClusterId{value='5fbce951b7ef3d2b77bd5494', description='null'}-120.25.149.156:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 120.25.149.156:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:591)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
