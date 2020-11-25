@@ -77,14 +77,26 @@ public class ArticleController extends BaseController implements ArticleControll
     @Override
     public GraceResult doReview(String articleId, Integer passOrNot) {
         Integer pendingStatus;
-        if (passOrNot == YesOrNo.YES.type){
+        if (passOrNot == YesOrNo.YES.type) {
             pendingStatus = ArticleReviewStatus.SUCCESS.type;
-        }else if (YesOrNo.NO.type.equals(passOrNot)){
+        } else if (YesOrNo.NO.type.equals(passOrNot)) {
             pendingStatus = ArticleReviewStatus.FAILED.type;
-        }else {
+        } else {
             return GraceResult.errorCustom(ResponseStatusEnum.ARTICLE_REVIEW_ERROR);
         }
         articleService.updateArticleStatus(articleId, pendingStatus);
+        return GraceResult.ok();
+    }
+
+    @Override
+    public GraceResult delete(String userId, String articleId) {
+        articleService.deleteArticle(userId, articleId);
+        return GraceResult.ok();
+    }
+
+    @Override
+    public GraceResult withdraw(String userId, String articleId) {
+        articleService.withdrawArticle(userId, articleId);
         return GraceResult.ok();
     }
 }
