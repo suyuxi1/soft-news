@@ -47,4 +47,5 @@ org\n3r\idworker\utils\Serializes.class
 com\soft1851\utils\SmsUtil.class
 org\n3r\idworker\utils\Ip.class
 org\n3r\idworker\strategy\DefaultWorkerIdStrategy.class
+com\soft1851\enums\Sex.class
 com\soft1851\exception\GraceExceptionHandler.class

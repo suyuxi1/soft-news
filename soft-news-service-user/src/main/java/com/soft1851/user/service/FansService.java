@@ -1,5 +1,10 @@
 package com.soft1851.user.service;
 
+import com.soft1851.enums.Sex;
+import com.soft1851.pojo.vo.RegionRatioVO;
+
+import java.util.List;
+
 /**
  * @author Su
  * @className FansService
@@ -33,4 +38,22 @@ public interface FansService {
      * @param fanId    粉丝iid
      */
     void unfollow(String writerId, String fanId);
+
+
+    /**
+     * 按性别统计粉丝数
+     *
+     * @param writerId 作者id
+     * @param sex      性别
+     * @return 粉丝数
+     */
+    Integer queryFansCounts(String writerId, Sex sex);
+
+    /**
+     * 根据地域查询粉丝数量
+     *
+     * @param writerId 作者id
+     * @return List<RegionRatioVO>
+     */
+    List<RegionRatioVO> queryRegionRatioCounts(String writerId);
 }
