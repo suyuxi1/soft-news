@@ -1,9 +1,6 @@
 package com.soft1851.api.config;
 
-import com.soft1851.api.interceptors.AdminTokenInterceptor;
-import com.soft1851.api.interceptors.PassportInterceptor;
-import com.soft1851.api.interceptors.UserActiveInterceptor;
-import com.soft1851.api.interceptors.UserTokenInterceptor;
+import com.soft1851.api.interceptors.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -24,18 +21,23 @@ public class InterceptorConfig implements WebMvcConfigurer {
     }
 
     @Bean
-    public UserTokenInterceptor userTokenInterceptor(){
+    public UserTokenInterceptor userTokenInterceptor() {
         return new UserTokenInterceptor();
     }
 
     @Bean
-    public UserActiveInterceptor userActiveInterceptor(){
+    public UserActiveInterceptor userActiveInterceptor() {
         return new UserActiveInterceptor();
     }
 
     @Bean
-    public AdminTokenInterceptor adminTokenInterceptor(){
+    public AdminTokenInterceptor adminTokenInterceptor() {
         return new AdminTokenInterceptor();
+    }
+
+    @Bean
+    public ArticleReadInterceptor articleReadInterceptor() {
+        return new ArticleReadInterceptor();
     }
 
     @Override
@@ -57,5 +59,9 @@ public class InterceptorConfig implements WebMvcConfigurer {
         //管理员登录拦截
         registry.addInterceptor(adminTokenInterceptor())
                 .addPathPatterns("/adminMsg/adminIsExist");
+
+        //阅读文章拦截
+        registry.addInterceptor(articleReadInterceptor())
+                .addPathPatterns("/article/readArticle");
     }
 }
