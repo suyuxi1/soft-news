@@ -5,10 +5,7 @@ import com.soft1851.result.GraceResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -46,7 +43,7 @@ public interface UserControllerApi {
      * 更新用户账户信息
      *
      * @param updateUserInfoBO 入参
-     * @param result 校验结果
+     * @param result           校验结果
      * @return GraceResult
      */
     @ApiOperation(value = "完善用户信息", notes = "完善用户信息", httpMethod = "POST")
@@ -62,4 +59,14 @@ public interface UserControllerApi {
     @ApiOperation(value = "获取用户基础信息", notes = "获取用户基础信息", httpMethod = "POST")
     @PostMapping("/userBasicInfo")
     GraceResult getUserBasicInfo(@RequestParam String userId);
+
+    /**
+     * 根据用户的ids查询用户列表
+     *
+     * @param userIds 用户的ids
+     * @return GraceResult
+     */
+    @ApiOperation(value = "根据用户的ids查询用户列表", notes = "根据用户的ids查询用户列表", httpMethod = "GET")
+    @GetMapping("/queryByIds")
+    GraceResult queryByIds(@RequestParam String userIds);
 }

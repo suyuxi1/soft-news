@@ -14,6 +14,7 @@ com\soft1851\pojo\bo\RegistLoginBO$RegistLoginBOBuilder.class
 com\soft1851\pojo\bo\UpdateUserInfoBO$UpdateUserInfoBOBuilder.class
 com\soft1851\pojo\vo\RegionRatioVO$RegionRatioVOBuilder.class
 com\soft1851\pojo\vo\UserAccountInfoVo$UserAccountInfoVoBuilder.class
+com\soft1851\pojo\vo\ArticleDetailVO.class
 com\soft1851\pojo\vo\AppUserVo.class
 com\soft1851\pojo\AppUser$AppUserBuilder.class
 com\soft1851\pojo\bo\NewAdminBO$NewAdminBOBuilder.class
@@ -27,3 +28,4 @@ com\soft1851\validate\CheckUrlValidate.class
 com\soft1851\pojo\mo\FriendLinkMO.class
 com\soft1851\pojo\Article.class
 com\soft1851\pojo\vo\FansCountsVO$FansCountsVOBuilder.class
+com\soft1851\pojo\vo\ArticleDetailVO$ArticleDetailVOBuilder.class

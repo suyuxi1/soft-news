@@ -1,0 +1,204 @@
+2020-11-26 18:14:44.048 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-26 18:14:44.366 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-26 18:14:44.817 [main] INFO  c.s.article.ArticleApplication - The following profiles are active: dev
+2020-11-26 18:14:45.599 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-26 18:14:45.600 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-26 18:14:45.618 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 MongoDB repository interfaces.
+2020-11-26 18:14:45.628 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-26 18:14:45.629 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-26 18:14:45.637 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2020-11-26 18:14:45.783 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.article]' package. Please check your configuration.
+2020-11-26 18:14:45.856 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=b6d1ff66-5da5-394c-96e0-c4ac3166faa0
+2020-11-26 18:14:46.302 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-26 18:14:46.311 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-11-26 18:14:46.311 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-26 18:14:46.312 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-26 18:14:46.424 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-26 18:14:46.425 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1592 ms
+2020-11-26 18:14:47.657 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-26 18:14:47.657 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-26 18:14:47.661 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-26 18:14:47.662 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-26 18:14:47.793 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-26 18:14:47.908 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-26 18:14:47.909 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-26 18:14:47.910 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-26 18:14:47.910 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-26 18:14:48.013 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[120.25.149.156:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-26 18:14:48.083 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-26 18:14:48.108 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-26 18:14:48.181 [cluster-ClusterId{value='5fbf8018c45f4c6d5c730ca0', description='null'}-120.25.149.156:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:202}] to 120.25.149.156:27017
+2020-11-26 18:14:48.224 [cluster-ClusterId{value='5fbf8018c45f4c6d5c730ca0', description='null'}-120.25.149.156:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=120.25.149.156:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=40430200}
+2020-11-26 18:14:48.333 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-11-26 18:14:48.876 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-11-26 18:14:48.898 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-26 18:14:49.266 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-26 18:14:49.278 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-26 18:14:49.286 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-26 18:14:49.422 [main] INFO  c.s.article.ArticleApplication - Started ArticleApplication in 6.228 seconds (JVM running for 7.201)
+2020-11-26 18:14:50.016 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Starting...
+2020-11-26 18:14:50.242 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - DateSourceHikariCP - Start completed.
+2020-11-26 18:14:50.248 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:14:50.291 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：42
+2020-11-26 18:15:00.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:15:00.019 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 18:15:07.587 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-26 18:15:07.588 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-26 18:15:07.598 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2020-11-26 18:15:10.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:15:10.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 18:15:20.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:15:20.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 18:15:30.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:15:30.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 18:15:40.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:15:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:15:50.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:15:50.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:16:00.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:16:00.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 18:16:04.430 [http-nio-8001-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.queryDetail====
+2020-11-26 18:16:04.584 [http-nio-8001-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Source must not be null] with root cause
+java.lang.IllegalArgumentException: Source must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:201)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:693)
+	at org.springframework.beans.BeanUtils.copyProperties(BeanUtils.java:639)
+	at com.soft1851.article.service.impl.ArticleServiceImpl.queryDetail(ArticleServiceImpl.java:150)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$FastClassBySpringCGLIB$$77e78f28.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTime0fService(ServiceLogAspect.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.article.service.impl.ArticleServiceImpl$$EnhancerBySpringCGLIB$$2adeee6a.queryDetail(<generated>)
+	at com.soft1851.article.controller.ArticleController.detail(ArticleController.java:113)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-26 18:16:10.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:16:10.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:16:20.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:16:20.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 18:16:30.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:16:30.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 18:16:40.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:16:40.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:16:50.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:16:50.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:17:00.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:17:00.011 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：3
+2020-11-26 18:17:10.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:17:10.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：3
+2020-11-26 18:17:20.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:17:20.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：3
+2020-11-26 18:17:30.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:17:30.019 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 18:17:40.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:17:40.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:17:50.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:17:50.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:18:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:18:00.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 18:18:10.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:18:10.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:18:20.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:18:20.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 18:18:30.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:18:30.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:18:40.002 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:18:40.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:18:50.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:18:50.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:19:00.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:19:00.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：2
+2020-11-26 18:19:10.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:19:10.006 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:19:20.007 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:19:20.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:19:30.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:19:30.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:19:40.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:19:40.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:19:50.014 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:19:50.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:20:00.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:20:00.005 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:20:10.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:20:10.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:20:20.016 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:20:20.017 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:20:30.008 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:20:30.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:20:40.003 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:20:40.004 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:20:50.009 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:20:50.010 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:21:00.012 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:21:00.013 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1
+2020-11-26 18:21:10.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - ==== 开始执行 class com.soft1851.article.service.impl.ArticleServiceImpl.updateAppointToPublish====
+2020-11-26 18:21:10.015 [scheduling-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：0
