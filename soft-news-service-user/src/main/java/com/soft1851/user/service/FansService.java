@@ -25,4 +25,12 @@ public interface FansService {
      * @param fanId    粉丝iid
      */
     void follow(String writerId, String fanId);
+
+    /**
+     * 取消关注
+     *
+     * @param writerId 作者id
+     * @param fanId    粉丝iid
+     */
+    void unfollow(String writerId, String fanId);
 }

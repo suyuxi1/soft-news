@@ -5,10 +5,12 @@ D:\Downloads\idea code\soft-news\soft-news-model\src\main\java\com\soft1851\pojo
 D:\Downloads\idea code\soft-news\soft-news-model\src\main\java\com\soft1851\pojo\Article.java
 D:\Downloads\idea code\soft-news\soft-news-model\src\main\java\com\soft1851\pojo\vo\AppUserVo.java
 D:\Downloads\idea code\soft-news\soft-news-model\src\main\java\com\soft1851\pojo\mo\FriendLinkMO.java
+D:\Downloads\idea code\soft-news\soft-news-model\src\main\java\com\soft1851\pojo\vo\FansCountsVO.java
 D:\Downloads\idea code\soft-news\soft-news-model\src\main\java\com\soft1851\pojo\AdminUser.java
 D:\Downloads\idea code\soft-news\soft-news-model\src\main\java\com\soft1851\pojo\vo\UserAccountInfoVo.java
 D:\Downloads\idea code\soft-news\soft-news-model\src\main\java\com\soft1851\validate\CheckUrlValidate.java
 D:\Downloads\idea code\soft-news\soft-news-model\src\main\java\com\soft1851\pojo\Fans.java
+D:\Downloads\idea code\soft-news\soft-news-model\src\main\java\com\soft1851\pojo\vo\RegionRatioVO.java
 D:\Downloads\idea code\soft-news\soft-news-model\src\main\java\com\soft1851\pojo\bo\AdminLoginBO.java
 D:\Downloads\idea code\soft-news\soft-news-model\src\main\java\com\soft1851\pojo\bo\RegistLoginBO.java
 D:\Downloads\idea code\soft-news\soft-news-model\src\main\java\com\soft1851\validate\CheckUrl.java
